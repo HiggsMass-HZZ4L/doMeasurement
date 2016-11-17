@@ -1,0 +1,8 @@
+./Template_Sig.exe 125 4mu REFIT
+cp ../CreateDatacards_Moriond2016_JES_v0_dev/templates2D/Dm_signal_4mu.root
+./Template_Sig.exe 125 4e REFIT
+./Template_Sig.exe 125 2e2mu REFIT
+
+./Template_Sig.exe 125 4mu RECO
+./Template_Sig.exe 125 4e RECO
+./Template_Sig.exe 125 2e2mu RECO

@@ -1,0 +1,34 @@
+imax 1
+jmax 7
+kmax *
+------------
+shapes * * hzz4l_4muS_13TeV.input.root w:$PROCESS 
+------------
+bin a1 
+observation -1.0 
+------------
+## mass window [105.0,140.0] 
+bin a1 a1 a1 a1 a1 a1 a1 a1 
+process ggH_hzz qqH_hzz WH_hzz ZH_hzz ttH_hzz bkg_qqzz bkg_ggzz bkg_zjets 
+process -4 -3 -2 -1 0 1 2 3 
+#rate 1.0000 1.0000 1.0000 1.0000 1.0000 2.1426 0.2161 0.4086 
+rate 3.57 3.57 3.57 3.57 3.57 7.664 0.772 1.460 
+------------
+lumi_13TeV lnN 1.026 1.026 1.026 1.026 1.026 1.026 1.026 - 
+pdf_gg lnN 1.0720 - - - 0.9220 - 1.031 - 
+pdf_qqbar lnN - 1.0270 1.0350 1.0350 - 1.034 - - 
+pdf_hzz4l_accept lnN 1.02 1.02 1.02 1.02 1.02 - - - 
+QCDscale_ggH lnN 1.0750 - - - - - - - 
+QCDscale_qqH lnN - 1.0020 - - - - - - 
+QCDscale_VH lnN - - 1.0040 1.0155 - - - - 
+QCDscale_ttH lnN - - - - 1.0655 - - - 
+QCDscale_ggVV lnN - - - - - - 1.08 - 
+QCDscale_VV lnN - - - - - 1.028 - - 
+BRhiggs_hzz4l lnN 1.02 1.02 1.02 1.02 1.02 - - - 
+CMS_eff_m lnN 1.043 1.043 1.043 1.043 1.043 1.043 1.043 - 
+CMS_hzz4mu_Zjets lnN - - - - - - - 0.6/1.4 
+CMS_zz4l_bkgMELA param 0  1  [-3,3]
+CMS_zz4l_mean_m_sig param 0.0 1.0 
+## CMS_zz4l_mean_m_sig = 0.001 
+CMS_zz4l_sigma_m_sig param 0.0 0.3 
+CMS_zz4l_n_sig_1_13 param 0.0 0.01 
